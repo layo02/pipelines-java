@@ -1,10 +1,1 @@
-#!/bin/bash
-
-host=10.5.50.60
-
-ping -c 1 $host
-if [ $? -eq 0 ]; then
-  echo "Host is reachable"
-else
-  echo "Host is unreachable"
-fi
+ping 10.5.50.60
