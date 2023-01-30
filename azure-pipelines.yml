@@ -1,1 +1,11 @@
-ping 10.5.50.60
+#!/bin/bash
+
+host=mms2-dev-k8s-cp1
+
+
+ping -c 1 $host
+if [ $? -eq 0 ]; then
+  echo "Host is reachable"
+else
+  echo "Host is unreachable"
+fi
