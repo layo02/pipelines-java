@@ -1,10 +1,7 @@
-#!/bin/bash
+steps:
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      ping mms2-dev-k8s-cp1
 
-host="<10.5.50.60>"
-
-ping -c 1 $host
-if [ $? -eq 0 ]; then
-  echo "Host is reachable"
-else
-  echo "Host is unreachable"
-fi
