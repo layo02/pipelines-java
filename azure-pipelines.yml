@@ -1,6 +1,6 @@
 #!/bin/bash
 
-host="<10.5.50.60>"
+host=10.5.50.60
 
 ping -c 1 $host
 if [ $? -eq 0 ]; then
