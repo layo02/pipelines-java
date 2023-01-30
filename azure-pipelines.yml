@@ -20,4 +20,4 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-    ping: '10.5.50.60'
+    ping: 'mms2-dev-k8s-cp1'
