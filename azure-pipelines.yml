@@ -1,2 +1,6 @@
-
-    ping mms2-dev-k8s-cp1.accessheritage.com
+steps:
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      ping mms2-dev-k8s-cp1.accessheritage.com
